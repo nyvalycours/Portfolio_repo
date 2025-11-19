@@ -30,7 +30,7 @@ body{
     color : #f5f5f5;
 
 }
-h1, .navbar-brand
+h1, h3, .navbar-brand
 {
   color:goldenrod;
 }
@@ -130,6 +130,7 @@ li{
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
 }
 
 
