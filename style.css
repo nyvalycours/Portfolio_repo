@@ -1,0 +1,173 @@
+html{
+    line-height:1.5;
+    tab-size:4;
+    /* police recommandés sur le net */
+    font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-feature-settings:normal;
+    font-variation-settings:normal;
+
+    /* Afin de régler la sensation de scroll */
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: none;  
+}
+/* NB: Assistance de ChatGPT sur l'implémentation du Scroll */
+.snap-child {
+    scroll-snap-align: start;
+}
+
+/* box sizing pour tous les éléments de la pages */
+* {
+  box-sizing: border-box;
+}
+
+/* ajustement des couleurs, suppression des puces et ajustement des polices */
+body{
+    font-size: 20px;
+    min-height: 100vh;
+    background-color:  #121212;
+    color : #f5f5f5;
+
+}
+h1, .navbar-brand
+{
+  color:goldenrod;
+}
+header{
+    background-color:   #121212;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+li{
+    list-style: none;
+}
+
+/* adapter la hauteur des sections principales */
+.tab_element {
+  min-height: 100vh; 
+  padding: 80px 20px 40px; 
+}
+
+/* petites animations pour distraire */
+.typing {
+  overflow: hidden;
+  white-space: normal;
+  margin: 0;
+  animation: typing 2s steps(50);
+}
+
+.cursor {
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+}
+
+/* trouvé sur le net */
+@media (min-width: 768px) {
+  .typing {
+    white-space: nowrap;
+    animation: typing 2s steps(50);
+  }
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* même couleur que les autres */
+#debut_menu{
+    color: #f5f5f5; 
+}
+
+/* gestion des images sur carousel */
+.carousel-item {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+}
+
+.carousel-item.active {
+  display: flex;
+   flex-direction: column;
+}
+/* Les deux moitiés du carousel slide */
+.carousel-half {
+    width: 100%;
+}
+
+/* Partie texte du carousel*/
+.carousel-half.bottom {
+  height: 50vh;
+  color: #f5f5f5;
+  padding: 2rem;
+}
+
+/* Partie image du carousel */
+.carousel-half.top {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* ajustement de l'espacement des boutons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  height: auto;
+  padding: 40%;
+}
+
+/* L’image reste centrée, pas déformée */
+.carousel-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+/* image de biographie */
+.photo-profil {
+    width: min(60vw, 300px);
+    height: min(60vw, 300px);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+
+footer{
+  background-color:   #121212;
+    color: #f5f5f5;
+    /* pour pouvir la règles des snap scroll sur le footer (écrasement) */
+    scroll-snap-align: start 
+}
+
+/* Enlever les changements de couleur peu importe ce qui se passe  */
+
+
+a,a:link,a:visited,a:active,a:focus{
+    color: #f5f5f5;      
+    text-decoration: none !important; 
+    font-weight: inherit !important;
+    outline: none !important;      
+    cursor: pointer;
+}
+
+a:hover,
+a:link:hover,
+a:visited:hover,
+a:active:hover,
+a:focus:hover {
+    color: #4fc3f7 !important;  /* ou blue si vous préférez */
+    font-weight: bolder !important;
+}
