@@ -30,10 +30,7 @@ body{
     color : #f5f5f5;
 
 }
-h1, h3, .navbar-brand
-{
-  color:goldenrod;
-}
+
 header{
     background-color:   #121212;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -42,6 +39,14 @@ header{
 li{
     list-style: none;
 }
+
+h1, h3, .navbar-brand
+{
+  color:goldenrod;
+}
+
+/* pour ajuster les longs textes sur mobile */
+.text{font-size: clamp(0.85rem, 3vw, 1.3rem)}
 
 /* adapter la hauteur des sections principales */
 .tab_element {
