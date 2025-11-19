@@ -1,0 +1,217 @@
+  <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio de Ny Valy Andriantseheno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="snap-container">
+    <!-- NAVBAR -->
+    <header class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <!-- Logo/Titre -->
+        <h1 class="navbar-brand mb-0 px-4">Bienvenu(e)</h1>
+
+        <!-- Bouton burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_eto"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu qui se collapse sur mobile -->
+        <div class="collapse navbar-collapse" id="menu_eto">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a id="debut_menu" class="nav-link active" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">A propos de moi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projecto">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#outils">Compétences et certifications</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contacts">Coordonées</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+  <main>
+    <ul class="tableau">
+      <li id="accueil"
+        class="tab_element snap-child w-100 min-vh-100 d-flex justify-content-center align-items-center p-3 p-md-3">
+        <div class="layout-padding w-100 px-3 px-md-5">
+          <h1 class="fs-1 fs-md-3">Vous êtes sur le portfolio de Ny Valy</h1>
+          <p class="typing fs-4 fs-md-2">Mes projets, mon parcours, et comment collaborer ensemble.<span class="cursor">█</span></p>
+        </div>
+      </li>
+      <!-- FIN ACCUEIL -->
+
+      </li>
+      <li id="apropos"
+        class="tab_element snap-child w-100 min-vh-100 d-flex flex-column flex-md-row align-items-center justify-content-center p-3 p-md-5">
+        <!-- A PROPOS DE MOI -->
+        <!-- Desciption -->
+        <div class="col-md-6 col-12 d-flex flex-column justify-content-center ">
+          <h1>A propos de moi</h1>
+          <p>
+            Passionné d'art, de jeux mobiles et de réseaux, je suis étudiant en Baccalauréat en informatique appliquée à l'Université de Moncton.
+            En formation et en constante apprentissage, j'aime créer des solutions originales...
+            et puis déboguer les bugs qui en suivent. StackOverflow est mon meilleur ami dans ce domaine.<span class="cursor">█</span>
+          </p>
+        </div>
+
+        <!-- photo de profil -->
+        <div class="col-md-6 col-12 d-flex justify-content-center">
+          <img src="./img/toi.jpg" alt="Une photo de moi" class="photo-profil image-fluid rounded shadow">
+        </div>
+        <!-- FIN A PROPOS -->
+      </li> 
+
+      <li id="projecto" class="tab_element snap-child w-100 min-vh-100 d-flex justify-content-center p-3 p-md-4">
+
+        <!-- PROJETS -->
+                                            <!-- Pour avoir un carousel qui change auto -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" >
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <div class="carousel-half top">
+                <img src="./img/projet1.png" class="carousel-img px" alt="projet1">
+              </div>
+
+              <!-- L'ittem carousel est divisé en deux pour une meilleur présentation -->
+              <div class="carousel-half bottom d-flex flex-column justify-content-center text-center">
+                <h1>Compresseur RLE (Run Length Encoding)</h1>
+                <p>Programme d'encodage (utilisant la méthode RLE) avec support CLI et affichage du taux de compression. Compresse les séquences répétées, 
+                  gère les I/O fichiers via syscalls Linux, et offre les modes compression, décompression et vérification de checksum.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="carousel-half top">
+                <img src="./img/projet2.png" class="carousel-img" alt="projet2">
+              </div>
+
+              <div class="carousel-half bottom d-flex flex-column justify-content-center text-center">
+                <h1>Mon Portfolio (oui, ce même site)</h1>
+                <p>Un site web conçu pour présenter mes projets… dont ce site lui-même fait partie. 
+                  Un projet qui se présente dans sa propre vitrine, présentant le "style" de son concepteur -moi.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- boutons  --> 
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </li>
+      <!-- FIN PROJETS -->
+
+      <!-- OUTILS -->
+      <li id="outils"
+        class="tab_element snap-child w-100 min-vh-100 d-flex justify-content-center align-items-center p-3 p-md-5">
+        <div class="d-flex flex-column flex-md-row w-100 px-3 px-md-4">
+          <section id="firstpart_outils" class="d-flex flex-column col-12 col-md-8 mb-4 mb-md-0">
+            <h1>Langages de programmation et outils</h1>
+            <ul class="col-md-5 d-flex list-unstyled">
+              <li class="d-flex flex-column">
+                <p>C <span class="badge bg-primary">Langage(s) principale(s)</span></p>
+                <p>C++ <span class="badge bg-primary">Langage(s) principale(s)</span></p>
+                <p>Git <span class="badge bg-danger">En apprentissage</span></p>
+                <p>MySQL <span class="badge bg-danger">En apprentissage</span></p>
+                <p>python <span class="badge bg-danger">En apprentissage</span></p>
+                <p>Assembly <span class="badge bg-danger">En apprentissage</span></p>
+                <p>html/CSS <span class="badge bg-danger">En apprentissage</span></p>
+                <p>Wireshark <span class="badge bg-danger">En apprentissage</span></p>
+                <p>Cisco Packet Tracer <span class="badge bg-success">Acquis</span></p>
+                <p>Graphical Network simulator-3 (GNS3) <span class="badge bg-danger">En apprentissage</span></p>
+              </li>
+            </ul>
+          </section>
+
+          <section id="secondpart_outils" class="d-flex flex-column col-12 col-md-4">
+            <h1>Certifications</h1>
+            <ul class="list-unstyled">
+              <li>
+                <p class="mb-2">CCT <span class="badge bg-success">Acquis</span></p>
+              </li>
+              <li>
+                <p class="mb-2">CCNA <span class="badge bg-danger">En cours</span></p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </li>
+      <!-- FIN OUTILS -->
+
+    </ul>
+  </main>
+
+
+  <footer id="contacts" class="border-top py-5 snap-child">
+  <div class="container">
+    <div class="row">
+      <!-- CONTACTS -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <h2 class="h4 mb-3">Comment me contacter?</h2>
+        <div>
+          <p class="mb-2"><a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> Courriel</a></p>
+          <p class="mb-2"><a href="#" target="_blank"><i class="fab fa-github fa-lg"></i> GitHub</a></p>
+          <p class="mb-2"><a href="#" target="_blank"><i class="fab fa-facebook fa-lg"></i> Facebook</a></p>
+          <p class="mb-2"><a href="#" target="_blank"><i class="fab fa-linkedin fa-lg"></i> Linkedin</a></p>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="col-12 col-md-6">
+        <h2 class="h4 mb-3">Ou laissez moi un mot :</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control bg-light-subtle text-dark" id="name" placeholder="Monsieur, Madame">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control bg-light-subtle text-dark" id="email" placeholder="Votre courriel">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control bg-light-subtle text-dark" id="message" rows="4" placeholder="Votre message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="text-center mt-4 pt-3 border-top border-secondary">
+      <p class="mb-0">© 2025 Company, Inc</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
